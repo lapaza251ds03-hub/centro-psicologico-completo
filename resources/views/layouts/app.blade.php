@@ -24,7 +24,9 @@
         </ul>
         <ul>
             <li><a href="{{ route('dashboard') }}">Inicio</a></li>
-            
+            <li><a href="{{ route('pacientes.index') }}">Pacientes</a></li> 
+            <li><a href="{{ route('psicologos.index') }}">Psicólogos</a></li> 
+            <li><a href="{{ route('citas.index') }}">Agenda de Citas</a></li>
             @if(auth()->user()->esAdmin())
                 <li><a href="{{ route('usuarios.index') }}">Personal</a></li>
             @endif
